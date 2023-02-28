@@ -28,7 +28,22 @@
     </nav>
     <div class="container">
         <div class="row">
-
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Название</th>
+                    <th scope="col">Дата создания</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="vacancy: ${vacancies}">
+                    <td th:text="${vacancy.id}" />
+                    <td th:text="${vacancy.title}" />
+                    <td th:text="${vacancy.creationDate}"/>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

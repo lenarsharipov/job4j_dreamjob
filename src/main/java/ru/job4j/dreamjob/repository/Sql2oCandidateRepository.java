@@ -82,5 +82,4 @@ public class Sql2oCandidateRepository implements CandidateRepository {
                     .executeAndFetch(Candidate.class);
         }
     }
-
 }

@@ -1,10 +1,12 @@
 package ru.job4j.dreamjob.repository;
 
+import org.springframework.stereotype.Repository;
 import org.sql2o.Sql2o;
 import ru.job4j.dreamjob.model.File;
 
 import java.util.Optional;
 
+@Repository
 public class Sql2oFileRepository implements FileRepository {
     private final Sql2o sql2o;
 

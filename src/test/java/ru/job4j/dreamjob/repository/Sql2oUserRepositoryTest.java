@@ -96,4 +96,5 @@ class Sql2oUserRepositoryTest {
         var user = new User(0, "user1@mail.ru", "user2", "password2");
         assertThat(sql2oUserRepository.save(user)).isEqualTo(empty());
     }
+
 }

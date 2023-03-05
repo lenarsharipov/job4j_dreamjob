@@ -17,6 +17,7 @@ public class Sql2oUserRepository implements UserRepository {
 
     @Override
     public Optional<User> save(User user) {
+
         try (var connection = sql2o.open()) {
             var sql =
             """
@@ -33,6 +34,7 @@ public class Sql2oUserRepository implements UserRepository {
         } catch (Exception exception) {
             return Optional.empty();
         }
+
     }
 
     @Override
